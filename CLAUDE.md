@@ -21,3 +21,7 @@ No test runner is configured yet.
 - **Styling**: Tailwind CSS v4 via PostCSS (config in `postcss.config.mjs`)
 
 Next.js 16 has breaking changes from prior versions. Always consult `node_modules/next/dist/docs/` before writing Next.js-specific code.
+
+## Documentation
+
+**IMPORTANT**: Before generating any code, always check the `/docs` directory for relevant documentation files. All code must align with the patterns, conventions, and decisions documented there. If a relevant doc exists, follow it — do not deviate without explicit instruction.
