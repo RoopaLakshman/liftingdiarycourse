@@ -1,7 +1,9 @@
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 import { format, parseISO, isValid } from "date-fns";
+import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { DashboardDatePicker } from "@/components/dashboard/date-picker";
 import { getWorkoutsForUserOnDate } from "@/data/workouts";
 
@@ -29,6 +31,12 @@ export default async function DashboardPage({
         <h1 className="text-2xl font-semibold tracking-tight">Dashboard</h1>
         <DashboardDatePicker selectedDate={selectedDate} />
       </div>
+
+      <Button asChild>
+        <Link href={`/dashboard/workout/new?date=${format(selectedDate, "yyyy-MM-dd")}`}>
+          Add new workout
+        </Link>
+      </Button>
 
       <section className="flex flex-col gap-4">
         <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wider">

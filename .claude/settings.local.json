@@ -8,7 +8,14 @@
       "mcp__neon__run_sql",
       "mcp__neon__describe_table_schema",
       "Bash(npx shadcn@latest *)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git checkout *)",
+      "Bash(xargs ls *)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\({**d.get\\('dependencies',{}\\), **d.get\\('devDependencies',{}\\)}, indent=2\\)\\)\")",
+      "Bash(npx tsx *)",
+      "Bash(git add *)"
     ]
   },
   "enabledMcpjsonServers": [
